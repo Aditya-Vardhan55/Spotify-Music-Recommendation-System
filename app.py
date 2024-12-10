@@ -1,6 +1,6 @@
 import pickle
-import spotipy
 import streamlit as st
+import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
 CLIENT_ID = "5732c161f87946eaa8f222b18a4a7103"
@@ -11,7 +11,7 @@ client_credentials_manager = SpotifyClientCredentials(client_id= CLIENT_ID, clie
 sp = spotipy.Spotify(client_credentials_manager= client_credentials_manager)
 
 def get_song_album_cover_url(song_name, artist_name):
-    search_query = f"track:{song_name} artist{artist_name}"
+    search_query = f"track:{song_name} artist:{artist_name}"
     results = sp.search(q= search_query, type="track")
     
     if results and results["tracks"]["items"]:
