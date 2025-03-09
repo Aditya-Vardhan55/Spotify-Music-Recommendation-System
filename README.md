@@ -1,4 +1,4 @@
-# Spotify-Music-Recommendation-System
+# Spotify-Music-Recommendation-System🎵
 ## Overview 
 The Spotify Music Recommendation System is an AI-powered project that suggests songs based on user preferences. It leverages machine learning techniques to analyze audio features and recommend tracks that align with individual tastes.
 ## Features🚀
